@@ -32,8 +32,6 @@ body {
   font-size: 18px;
 }
 
-
-
 .link-underline {
   color: $tech;
   position: relative;
@@ -43,7 +41,7 @@ body {
 }
 
 .link-underline::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 2px;
   left: 0;
@@ -54,44 +52,42 @@ body {
 }
 
 .hide {
-display: none !important;
+  display: none !important;
 }
-
 
 .logo-animation {
   box-shadow: 0 0 0 2px transparent;
   border-radius: 5px;
   transition: box-shadow 0.4s, opacity 0.4s;
   &:focus {
-    box-shadow:  0 0 0 2px rgba(255, 104, 56, 0.7);
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
   }
   &:hover {
     opacity: 0.8;
   }
-  &:active  {
+  &:active {
     opacity: 0.5;
     box-shadow: none;
   }
 }
 
-
-.link-animation  {
+.link-animation {
   box-shadow: 0 0 0 2px transparent;
   border-radius: 5px;
   transition: box-shadow 0.4s, text-shadow 0.4s, color 0.4s;
   &:focus {
     box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-    color: $tech; 
+    color: $tech;
   }
-  
+
   &:focus::after {
     background-color: transparent;
   }
   &:hover.link-underline {
     color: $accent;
-      &::after {
-        background-color: transparent;
-      }
+    &::after {
+      background-color: transparent;
+    }
   }
   &:active {
     text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
@@ -109,59 +105,56 @@ display: none !important;
   box-shadow: 0 0 0 2px transparent;
   border-radius: 5px;
   transition: background-color 0.4s, box-shadow 0.4s, stroke 0.4s;
-    &:focus {
-      background-color: rgba(255, 122, 80, 0.1);
-      box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-    }
-    &:hover {
-      background-color: $icon;
-      stroke: $white;
-      box-shadow: none;
-    }
-    &:hover .menu__user-num {
-      background-color: $white;
-      color: $accent;
-    }
-    &:active {
-      background-color: $icon-bg;
-      stroke: $tech;
-    }
-    &:active .menu__user-num {
-      background-color: $accent;
-      color: $white;
-    }
+  &:focus {
+    background-color: rgba(255, 122, 80, 0.1);
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+  }
+  &:hover {
+    background-color: $icon;
+    stroke: $white;
+    box-shadow: none;
+  }
+  &:hover .menu__user-num {
+    background-color: $white;
+    color: $accent;
+  }
+  &:active {
+    background-color: $icon-bg;
+    stroke: $tech;
+  }
+  &:active .menu__user-num {
+    background-color: $accent;
+    color: $white;
+  }
 }
 
 .button-animation {
   box-shadow: 0 0 0 2px transparent;
   border-radius: 5px;
   transition: box-shadow 0.4s, background-color 0.4s, color 0.4s;
-    &:focus {
-      background-color: rgba(255, 122, 80, 0.1);
-      box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-      color: $accent;
-    }
-    &:focus .footer__subscription-icon {
-      fill: $accent;
-    }
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-      box-shadow: 0 5px 12px rgba(255, 104, 56, 0.2), 0 0 0 2px rgba(255, 104, 56, 0.7);
-      color: $accent;
-    }
-    &:hover .footer__subscription-icon {
-      fill: $accent;
-    }
-    &:active {
-      background: rgba(255, 122, 80, 0.1);
-      box-shadow: none;
-      color: $accent;
-    }
-    &:active .footer__subscription-icon {
-      fill: $accent;
-    }
+  &:focus {
+    background-color: rgba(255, 122, 80, 0.1);
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+    color: $accent;
+  }
+  &:focus .footer__subscription-icon {
+    fill: $accent;
+  }
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 5px 12px rgba(255, 104, 56, 0.2),
+      0 0 0 2px rgba(255, 104, 56, 0.7);
+    color: $accent;
+  }
+  &:hover .footer__subscription-icon {
+    fill: $accent;
+  }
+  &:active {
+    background: rgba(255, 122, 80, 0.1);
+    box-shadow: none;
+    color: $accent;
+  }
+  &:active .footer__subscription-icon {
+    fill: $accent;
+  }
 }
-
-
-
-
