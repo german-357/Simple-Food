@@ -1,0 +1,10 @@
+.DS_Store
+.idea/
+.idea/*
+.VSCode
+*.sublime*
+build/
+node_modules/
+npm-debug.*
+peckage-lock.json
+app/css/*
