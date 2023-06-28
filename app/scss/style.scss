@@ -457,9 +457,36 @@
   }
 
   &__text {
+    position: relative;
     display: block;
     margin-bottom: 30px;
     font-size: 20px;
+    font-style: italic;
+      &::before {
+        position: absolute;
+        content: '';
+        background-image: url('../images/coma.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 20px;
+        top: -5px;
+        left: -50px;
+      }
+      &::after {
+        position: absolute;
+        content: '';
+        transform: rotate(180deg);
+        background-image: url('../images/coma.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 24px;
+        height: 20px;
+        bottom: -5px;
+        right: -50px;
+      }
   }
 
   &__name {
@@ -561,6 +588,32 @@
   }
 }
 
+.download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    &__inner {
+      max-width: 538px;
+      margin-right: 60px;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+    &__title {
+      text-align: left;
+    }
+    &__text {
+      margin-bottom: 35px;
+    }
+    &__list {
+      display: flex;
+    }
+    &__link {
+      display: block;
+      margin-right: 30px;
+    }
+}
+
 
 .footer {
   &__wrapper {
@@ -570,7 +623,7 @@
 
   &__top {
     display: flex;
-    padding-bottom: 60px;
+    padding: 60px 0;
   }
 
   &__subscription {

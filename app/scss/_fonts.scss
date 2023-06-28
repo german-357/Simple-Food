@@ -22,8 +22,25 @@
   font-family: 'Rubik';
   font-weight: 500;
   font-style: normal;
-  src:url('../fonts/Rubik-Medium\ \(2\).woff2') format('woff2'),
-      url('../fonts/Rubik-Medium\ \(2\).woff') format('woff');
+  src:url('../fonts/Rubik-Medium.woff2') format('woff2'),
+      url('../fonts/Rubik-Medium.woff') format('woff');
   font-display: swap;
 }
 
+// @font-face {
+//   font-family: 'Rubik';
+//   font-weight: 300;
+//   font-style: italic;
+//   src: url('../fonts/Rubik-LightItalic.woff2') format('woff2'),
+//        url('../fonts/Rubik-LightItalic.woff') format('woff');
+//   font-display: swap;
+// }
+
+@font-face {
+  font-family: 'Rubik';
+  font-weight: 400;
+  font-style: italic;
+  src:url('../fonts/Rubik-Italic.woff2') format('woff2'),
+      url('../fonts/Rubik-Italic.woff') format('woff');
+  font-display: swap;
+}
